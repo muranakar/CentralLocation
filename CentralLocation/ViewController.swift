@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var array: [MyShapeLayer] = []
     @IBOutlet weak var uiview: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,5 +31,20 @@ class ViewController: UIViewController {
         let y = uiview.frame.origin.y + uiview.frame.height / 2
         print("(x,y)",(x,y))
      }
+
+    @IBAction func showCircle(_ sender: Any) {
+        let rect = uiview.frame
+        let circle = MyShapeLayer()
+        circle.frame = rect
+        circle.drawOval(lineWidth: 1)
+        array.append(circle)
+        self.view.layer.addSublayer(circle)
+    }
+
+    @IBAction func removeCircle(_ sender: Any) {
+        array.forEach { circle in
+            circle.removeFromSuperlayer()
+        }
+    }
 }
 

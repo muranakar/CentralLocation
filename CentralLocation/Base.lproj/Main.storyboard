@@ -60,18 +60,46 @@
                                     <action selector="centerLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R18-4K-TR6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swV-DY-nXn">
+                                <rect key="frame" x="123.5" y="687" width="167" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="167" id="IeF-Fq-qfM"/>
+                                    <constraint firstAttribute="height" constant="31" id="PQd-7h-Ymi"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="丸を図形に重ねる"/>
+                                <connections>
+                                    <action selector="showCircle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ju7-pv-apc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vng-rq-Ied">
+                                <rect key="frame" x="166" y="758" width="82" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="82" id="U6i-id-XT0"/>
+                                    <constraint firstAttribute="height" constant="31" id="pg0-ll-8jO"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="丸を消す"/>
+                                <connections>
+                                    <action selector="removeCircle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="89z-Vh-Q35"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="swV-DY-nXn" firstAttribute="top" secondItem="pgl-gW-Znc" secondAttribute="bottom" constant="50" id="3bi-my-yyC"/>
                             <constraint firstItem="h57-Qd-Rnd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4HM-me-WMe"/>
                             <constraint firstItem="pgl-gW-Znc" firstAttribute="top" secondItem="h57-Qd-Rnd" secondAttribute="bottom" constant="50" id="7DB-ca-bAN"/>
                             <constraint firstItem="pgl-gW-Znc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MOQ-Gp-CSa"/>
                             <constraint firstItem="QWh-T1-cAJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N9W-xf-mBt"/>
                             <constraint firstItem="h57-Qd-Rnd" firstAttribute="top" secondItem="QWh-T1-cAJ" secondAttribute="bottom" constant="50" id="R2z-od-lFN"/>
+                            <constraint firstItem="vng-rq-Ied" firstAttribute="top" secondItem="swV-DY-nXn" secondAttribute="bottom" constant="40" id="Y3s-ct-MdB"/>
+                            <constraint firstItem="swV-DY-nXn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e8w-QO-Pwh"/>
                             <constraint firstItem="QWh-T1-cAJ" firstAttribute="top" secondItem="uW3-dA-Fn4" secondAttribute="bottom" constant="100" id="eaJ-sD-hlb"/>
                             <constraint firstItem="uW3-dA-Fn4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="nyT-4J-rEU"/>
                             <constraint firstItem="uW3-dA-Fn4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qk7-x5-6FN"/>
+                            <constraint firstItem="vng-rq-Ied" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="stz-Nb-qSR"/>
                         </constraints>
                     </view>
                     <connections>
